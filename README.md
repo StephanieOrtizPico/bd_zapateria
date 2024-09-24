@@ -33,3 +33,9 @@
 `SELECT nombre_articulo FROM Articulo;`
 
 ![Consulta3](img/consulta3.png "Consulta 3")
+
+4. Obtener los nombres y los precios de los productos de la tienda
+
+`SELECT nombre_articulo AS Nombre; precio_articulo AS precio FROM Articulo;`
+
+![Consulta4](img/consulta4.png "Consulta 4")
