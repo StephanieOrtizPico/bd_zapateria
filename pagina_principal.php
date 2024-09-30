@@ -1,3 +1,14 @@
+<?php
+    require 'modelo/conexion.php';
+
+    session_start();
+
+    if(isset($_SESSION['username'] && isset($_SESSION['correo'])))
+    {
+        $nombre_usuario = $_SESSION['username'];
+        $correo_usuario = $_SESSION['correo'];
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +17,8 @@
     <title>Página Principal</title>
 </head>
 <body>
-    <h1>Bienvenido</h1>
+    <div id="contenedor_principal">
+        <h1>Usuario: <?php echo ' '.$nombre_usuario;?></h1>
+    </div>
 </body>
 </html>
